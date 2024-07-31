@@ -1,0 +1,262 @@
+html{
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px 5px 20px;
+    background-color: #333;
+    color: white;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.brand-name {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 10px;
+    display: block;
+}
+
+.nav-links a:hover {
+    background-color: rgb(96, 89, 87);
+    border-radius: 5px;
+}
+
+.auth-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    color: white;
+    text-decoration: none;
+    background-color: rgb(255, 219, 57);
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+}
+
+.nav-toggle-icon {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background: white;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.nav-toggle-icon::before,
+.nav-toggle-icon::after {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 2px;
+    background: white;
+    position: absolute;
+    left: 0;
+}
+
+.nav-toggle-icon::before {
+    top: -7px;
+}
+
+.nav-toggle-icon::after {
+    top: 7px;
+}
+
+.img1{
+    margin: auto;
+    display: flex;
+    height: 600px;
+     width: 800px;
+}
+.home-content{
+    margin-top: 20px;
+    margin-right: 20px;
+    padding-left: 20px;
+    padding-top: 90px;
+    font-size: 20px;
+}
+.trophy{
+   margin: 40px;
+   border-radius: 10px;
+
+}.year{
+    color: yellow;
+}
+#about{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 2fr));
+    background-color: #554c4c;
+    flex-direction: row-reverse;
+    color: white;
+}
+.pro{
+    display: flex;
+    justify-content: center;
+    
+}
+
+#poster{
+    font-size: 20px;
+    display: flex;
+    color: black;
+    justify-content: center;
+    background-color: rgb(205, 220, 227);
+    
+}
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 5rem;
+}
+
+.product-item {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 0.5rem;
+}
+
+.product-item h2 {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.product-item p {
+    font-size: 1rem;
+    color: #333;
+    margin: 0.5rem 0;
+}
+
+button {
+    background-color: #dff612;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.do:hover {
+    background-color: #e1bb13;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-toggle {
+        display: block;
+
+    }
+
+}
+
+
